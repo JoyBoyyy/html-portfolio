@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Tinos", serif;
+}
+
+div{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #21271f;
+}
+
+/* --------------------------------DESKTOP---------------------------------- */
+/* ---------------------TOP---------------------- */
+
+.aboutTop{
+    background-color: #609966;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.titlepageTop{
+    font-size: 32px;
+    color: #EDF1D6;
+    text-shadow: 2px 2px 2px #40513B;
+    text-indent: 50px;
+}
+
+/* ---------------------MIDDLE---------------------- */
+
+.aboutMiddle{
+    background-color: #EDF1D6;
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.aboutSection{
+ /* border: solid 1px black; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 750px;
+    height: 150px;
+
+    text-align: justify;
+    font-size: 20px;
+    color: #21271f;
+    text-shadow: 0.5px 0.5px 0.5px #40513B;
+}
+
+.aboutSectionTitle{
+    font-size: 25px;
+    text-shadow: 0.5px 0.5px 1px #609966;
+    text-transform: uppercase;
+}
+
+.aboutSectionInfo * li{
+    padding-bottom: 10px;
+}
+
+/* ---------------------BOTTOM---------------------- */
+
+.aboutBottom{
+    background-color: #9DC08B;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutBottom * a{
+    background-color: #EDF1D6;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    color: #40513B;
+}
