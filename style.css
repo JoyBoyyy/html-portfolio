@@ -1,0 +1,134 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Tinos", serif;
+}
+
+div{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* --------------------------------DESKTOP---------------------------------- */
+/* ---------------------TOP---------------------- */
+
+.containerTop{
+    background-color: #609966;
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #EDF1D6;
+}
+
+.containerTop > img{
+    width: 200px;
+    border: solid 10px #40513B;
+    border-radius: 50%;
+    margin: 0%;
+}
+
+h1{
+    text-shadow: 2px 2px 2px #40513B;
+    text-align: center;
+}
+
+/*
+
+  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repudiandae vero totam deserunt sequi! Labore nihil nesciunt quo, iste cumque molestiae excepturi hic sit adipisci.</h2>
+
+h2{
+    text-shadow: 2px 2px 2px #40513B;
+    text-align: center;
+    text-wrap: pretty;
+}
+*/
+
+#personalInfo{
+    /*border: 1px solid black;*/
+    padding: 10px;
+    width: 600px;
+    height: 100px;
+
+    text-shadow: 2px 2px 1px #40513B;
+    text-align: justify;
+    font-size: 24px;
+}
+
+/* ---------------------MIDDLE---------------------- */
+
+.containerMiddle{
+    background-color: #EDF1D6;
+    width: 100%;
+}
+
+.projectSection{
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectSection  img{
+    width: 200px;
+    border: solid 5px #40513B;
+    border-radius: 5px;
+    margin-right: 20px;
+    float: left;
+}
+
+.projects {
+    width: 800px;
+    margin: 10px;
+}
+
+.projects a{
+    color: #609966;
+}
+
+.projects h3{
+    color: #40513B;
+    /*text-shadow: 1px 1px 1px #9DC08B;*/
+}
+
+.projInfo{
+    width: 500px;
+    height: 100px;
+    display: inline-block;
+
+    text-align: justify;
+    font-size: 15px;
+    color: #21271f;
+}
+/* ---------------------BOTTOM---------------------- */
+
+.containerBottom{
+    background-color: #9DC08B;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.containerBottom * a{
+    background-color: #EDF1D6;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    color: #40513B;
+}
+
+/* ------------------------------------------------- */
+/* --------------------------------TABLET---------------------------------- */
+
+
