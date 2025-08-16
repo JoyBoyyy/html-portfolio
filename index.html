@@ -3,54 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joele Kotrri's portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="containerTop">
-        <img src="./asset/test.jpg" alt="photo of Joele">
-        <h1>Hi, I'm Joele!</h1>
-        <div id="personalInfo">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, nulla omnis minus dignissimos, ab quam fuga temporibus nostrum sint ipsa similique consequatur dolores, unde iure doloremque quisquam cumque tempora odio.
+    <!---------- Top part ---------->
+   <div class="container top">
+        <img class="contentTop top1" src="./asset/test.jpg" alt="joele kotrri's photo">
+        <div class="contentTop top2">
+            <div class="top2Title">I'm Joele!</div>
+            <div class="top2Info">Hi! My name is Joele and I'm currently studying to become a <b>Web Developer</b>. In the future, my goal is to evolve into a <b>Game Developer</b>. </div>
         </div>
-    </div>
+   </div>
 
-    <div class="containerMiddle">
-        <div class="projectSection">
-            <div id="project1" class="projects">
-                <img src="./asset/test.jpg" alt="project1">
-                <h3>Project1 - <a href="">Click to view</a></h3>
-                <div class="projInfo">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro omnis cupiditate assumenda vitae ex dicta quasi pariatur officia, eligendi ea? Cupiditate aperiam cumque error vitae. At, est. Dignissimos, cupiditate sunt?
-                </div>
-            </div>
-            <div id="project2" class="projects">
-                <img src="./asset/test.jpg" alt="project2">
-                <h3>Project2 - <a href="">Click to view</a></h3>
-                <div class="projInfo">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro omnis cupiditate assumenda vitae ex dicta quasi pariatur officia, eligendi ea? Cupiditate aperiam cumque error vitae. At, est. Dignissimos, cupiditate sunt?
-                </div>
-            </div>
-            <div id="project3" class="projects">
-                <img src="./asset/test.jpg" alt="project3">
-                <h3>Project3 - <a href="">Click to view</a></h3>
-                <div class="projInfo">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro omnis cupiditate assumenda vitae ex dicta quasi pariatur officia, eligendi ea? Cupiditate aperiam cumque error vitae. At, est. Dignissimos, cupiditate sunt?
-                </div>
-            </div>
+    <!---------- Middle part ---------->
+   <div class="container middle">
+    <!-- Front-end projects -->
+        <div class="containerCont">
+            <img class="previewMid" src="./asset/test.jpg" alt="Front-end content preview">
+            <div class="titleMid">Front-End projects</div>
+            <div class="infoMid">Here you'll find my front-end projects, I'll regularly update this page with all my new projects. </div>
+            <a href="">Go to the page</a>
         </div>
-    </div>
+    <!-- Game developer projects -->
+        <div class="containerCont">
+            <img class="previewMid" src="./asset/test.jpg" alt="Game developer content preview">
+            <div class="titleMid">Game developer projects</div>
+            <div class="infoMid">Here you'll find my game developer/Unity projects.</div>
+            <a href="">Go to the page</a>
+        </div>
 
-    <div class="containerBottom">
-        <h3><a href="./about.html">About me</a></h3>
-        <h3><a href="./contact.html">Contacts</a></h3>
-    </div>
+   </div>
+
+    <!---------- Bottom part ---------->
+   <div class="container bottom">
+        <a href="./about.html"><button id="buttonAbout">About me</button></a>
+        <a href="./contact.html"><button id="buttonContact">Contacts</button></a>
+   </div>
 
 
-
-
+    <script src="./index.js"></script>
 </body>
 </html>

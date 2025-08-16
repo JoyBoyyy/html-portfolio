@@ -4,131 +4,251 @@ body{
     font-family: "Tinos", serif;
 }
 
-div{
+
+.container{
+    width: 100%;
     margin: 0px;
     padding: 0px;
 }
 
-a{
-    text-decoration: none;
-}
-
-/* --------------------------------DESKTOP---------------------------------- */
-/* ---------------------TOP---------------------- */
-
-.containerTop{
+/* -------------------- Top Section -------------------- */
+.top{
     background-color: #609966;
-    width: 100%;
-    height: 500px;
 
-    display: flex;
-    flex-direction: column;
+    min-height: 30vh;
+    height: auto;
+
+    display: flex;   
     justify-content: center;
     align-items: center;
 
     color: #EDF1D6;
+    overflow: hidden;
 }
 
-.containerTop > img{
-    width: 200px;
-    border: solid 10px #40513B;
+.contentTop{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.top img{
     border-radius: 50%;
-    margin: 0%;
-}
-
-h1{
-    text-shadow: 2px 2px 2px #40513B;
-    text-align: center;
-}
-
-/*
-
-  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repudiandae vero totam deserunt sequi! Labore nihil nesciunt quo, iste cumque molestiae excepturi hic sit adipisci.</h2>
-
-h2{
-    text-shadow: 2px 2px 2px #40513B;
-    text-align: center;
-    text-wrap: pretty;
-}
-*/
-
-#personalInfo{
-    /*border: 1px solid black;*/
-    padding: 10px;
-    width: 600px;
-    height: 100px;
-
-    text-shadow: 2px 2px 1px #40513B;
-    text-align: justify;
-    font-size: 24px;
-}
-
-/* ---------------------MIDDLE---------------------- */
-
-.containerMiddle{
-    background-color: #EDF1D6;
-    width: 100%;
-}
-
-.projectSection{
-    padding: 25px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.projectSection  img{
-    width: 200px;
-    border: solid 5px #40513B;
-    border-radius: 5px;
-    margin-right: 20px;
+    margin: 10px 0px;
     float: left;
 }
 
-.projects {
-    width: 800px;
-    margin: 10px;
+.top .top2{
+    width: 60%;
+    height: 75%;
+    overflow: hidden;
+    margin-left: 10px;
 }
 
-.projects a{
-    color: #609966;
+.top2Title{
+    text-align: left;
+    text-shadow: 2px 2px 2px #40513B;
+    font-weight: bold;
 }
 
-.projects h3{
-    color: #40513B;
-    /*text-shadow: 1px 1px 1px #9DC08B;*/
+/* -------------------- Middle Section -------------------- */
+.middle{
+    background-color: #EDF1D6;
+    min-height: 50vh;
+    height: auto;
 }
 
-.projInfo{
-    width: 500px;
-    height: 100px;
+.containerCont{
+    width: 90%;
+    margin: 10px 10px;
+    overflow: hidden;
     display: inline-block;
+}
 
-    text-align: justify;
-    font-size: 15px;
+.previewMid{
+    float: left;
+    border-radius: 5px;
+}
+
+.titleMid{
+     color: #40513B;
+    font-weight: bold;
+}
+
+.infoMid{
     color: #21271f;
 }
-/* ---------------------BOTTOM---------------------- */
 
-.containerBottom{
+.containerCont a{
+    color: #609966;
+    text-decoration: none;
+}
+
+/* -------------------- Bottom Section -------------------- */
+.bottom{
     background-color: #9DC08B;
-    height: 100px;
-    width: 100%;
+    min-height: 20vh;
+    height: auto;
+
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
-.containerBottom * a{
-    background-color: #EDF1D6;
-    padding: 10px;
-    border-radius: 50px;
+button{ 
+    font-family: "Tinos", serif; 
     text-align: center;
+    font-weight: bold;
+    background-color: #EDF1D6;   
     color: #40513B;
+
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
 }
 
-/* ------------------------------------------------- */
-/* --------------------------------TABLET---------------------------------- */
+button:hover{
+    background-color: #609966;   
+    color: #EDF1D6;
+}
 
+/* -------------------- PHONE 600px -------------------- */
+@media (max-width: 600px){
+    /* ---------- Top Section ---------- */
+    
+    .top img{
+        width: 100px;
+        border: solid 5px #40513B;
+    }
 
+    .top2Title{
+        font-size: 20px;
+    }
+
+    .top2Info{
+        text-shadow: 2px 2px 1px #40513B;
+        font-size: 15px;
+    }
+
+    /* ---------- Middle Section ---------- */
+
+    .previewMid{
+        width: 90px;
+        margin: 3px;
+        border: solid 5px #40513B;
+    }
+
+    .titleMid{
+        font-size: 18px;
+    }
+
+    .infoMid{
+        font-size: 15px;
+        margin: 5px 0px;
+    }
+
+    .containerCont a{
+        font-size: 15px;
+    }
+
+    /* ---------- Bottom Section ---------- */
+
+    button{
+        font-size: 15px;
+    }
+
+    
+}
+
+/* -------------------- TABLET 601 a 1200px -------------------- */
+@media (min-width: 601px) and (max-width: 1200px){
+
+    /* ---------- Top Section ---------- */
+
+    .top img{
+        width: 150px;
+        border: solid 7.5px #40513B;
+    }
+
+    .top2Title{
+        font-size: 30px;
+    }
+
+    .top2Info{
+    text-shadow: 2px 2px 1px #40513B;
+    font-size: 20px;
+    }
+
+    /* ---------- Middle Section ---------- */
+
+    .previewMid{
+        width: 150px;
+        margin: 5px;
+        border: solid 5px #40513B;
+    }
+
+    .titleMid{
+        font-size: 25px;
+    }
+
+    .infoMid{
+        font-size: 20px;
+        margin: 5px 0px;
+    }
+
+    .containerCont a{
+        font-size: 20px;
+    }
+
+    /* ---------- Bottom Section ---------- */
+
+    button{
+        font-size: 20px;
+    }
+}
+
+/* -------------------- REST 1201px -------------------- */
+@media (min-width: 1201px){
+
+    /* ---------- Top Section ---------- */
+
+    .top img{
+        width: 200px;
+        border: solid 10px #40513B;
+    }
+
+    .top2Title{
+        font-size: 50px;
+    }
+
+    .top2Info{
+        text-shadow: 2px 2px 1px #40513B;
+        font-size: 30px;
+    }
+    /* ---------- Middle Section ---------- */
+
+    .previewMid{
+        width: 150px;
+        margin: 10px;
+        border: solid 5px #40513B;
+    }
+
+    .titleMid{
+        font-size: 35px;
+    }
+
+    .infoMid{
+        font-size: 30px;
+        margin: 5px 0px;
+    }
+
+    .containerCont a{
+        font-size: 30px;
+    }
+
+    /* ---------- Bottom Section ---------- */
+
+    button{
+        font-size: 30px;
+    }
+}
