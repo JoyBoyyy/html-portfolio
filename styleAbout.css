@@ -4,82 +4,169 @@ body{
     font-family: "Tinos", serif;
 }
 
-div{
+
+.container{
+    width: 100%;
     margin: 0px;
     padding: 0px;
 }
 
-a{
-    text-decoration: none;
-    color: #21271f;
-}
+/* -------------------- Top Section -------------------- */
 
-/* --------------------------------DESKTOP---------------------------------- */
-/* ---------------------TOP---------------------- */
-
-.aboutTop{
+.top{
     background-color: #609966;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: left;
+
+    min-height: 15vh;
+    height: auto;
+
+    display: flex;   
+    justify-content: start;
     align-items: center;
-}
 
-.titlepageTop{
-    font-size: 32px;
     color: #EDF1D6;
+    overflow: hidden;
+}
+
+.top div{
+    text-align: left;
     text-shadow: 2px 2px 2px #40513B;
-    text-indent: 50px;
+    font-weight: bold;
+    margin: 15px;
 }
 
-/* ---------------------MIDDLE---------------------- */
+/* -------------------- Middle Section -------------------- */
 
-.aboutMiddle{
+.middle{
     background-color: #EDF1D6;
-    width: 100%;
-    padding: 30px 30px;
-}
+    min-height: 65vh;
+    height: auto;
 
-.aboutSection{
- /* border: solid 1px black; */
-    display: flex;
+    display: flex;   
     flex-direction: column;
     align-items: start;
-    width: 750px;
-    height: 150px;
-
-    text-align: justify;
-    font-size: 20px;
-    color: #21271f;
-    text-shadow: 0.5px 0.5px 0.5px #40513B;
 }
 
-.aboutSectionTitle{
-    font-size: 25px;
-    text-shadow: 0.5px 0.5px 1px #609966;
-    text-transform: uppercase;
+.section{
+    width: 90%;
+    margin: 10px;
+    
+    color: #40513B;
+    text-wrap: pretty;
 }
 
-.aboutSectionInfo * li{
-    padding-bottom: 10px;
+.sectionTitle{
+    font-weight: bold;
 }
 
-/* ---------------------BOTTOM---------------------- */
+.sectionInfo div{
+    margin-left: 10px;
+}
 
-.aboutBottom{
+/* -------------------- Bottom Section -------------------- */
+
+.bottom{
     background-color: #9DC08B;
-    height: 100px;
-    width: 100%;
+    min-height: 20vh;
+    height: auto;
+
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
-.aboutBottom * a{
-    background-color: #EDF1D6;
-    padding: 10px;
-    border-radius: 50px;
+button{ 
+    font-family: "Tinos", serif; 
     text-align: center;
+    font-weight: bold;
+    background-color: #EDF1D6;   
     color: #40513B;
+
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: #609966;   
+    color: #EDF1D6;
+}
+
+/* -------------------- PHONE 600px -------------------- */
+
+@media (max-width: 600px){
+
+    /* ---------- Top Section ---------- */
+
+    .top div{
+        font-size: 20px;
+    }
+
+    /* ---------- Middle Section ---------- */
+
+    .sectionTitle{
+        font-size: 18px;
+    }
+
+    .section{
+        font-size: 15px;
+    }
+
+    /* ---------- Bottom Section ---------- */
+
+    button{
+        font-size: 15px;
+    }
+}
+
+/* -------------------- TABLET 601 a 1200px -------------------- */
+
+@media (min-width: 601px) and (max-width: 1200px){
+
+    /* ---------- Top Section ---------- */
+    .top div{
+        font-size: 25px;
+    }
+
+    /* ---------- Middle Section ---------- */
+
+        .sectionTitle{
+        font-size: 23px;
+    }
+
+    .section{
+        font-size: 20px;
+    }
+
+    /* ---------- Bottom Section ---------- */
+
+    button{
+        font-size: 20px;
+    }
+}
+
+/* -------------------- REST 1201px -------------------- */
+
+@media (min-width: 1201px){
+
+    /* ---------- Top Section ---------- */
+
+    .top div{
+        font-size: 35px;
+    }
+
+    /* ---------- Middle Section ---------- */
+
+    .sectionTitle{
+        font-size: 33px;
+    }
+
+    .section{
+        font-size: 30px;
+    }
+
+    /* ---------- Bottom Section ---------- */
+
+    button{
+        font-size: 30px;
+    }
 }

@@ -3,36 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts page</title>
+    <title>Joele Kotrri's contact page</title>
+
     <link rel="stylesheet" href="./styleContact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="contactTop">
-        <div class="titlepageTop">Joele Kotrri's contact page </div>
+    
+    <!---------- Top part ---------->
+    <div class="container top">
+        <div>Joele Kotrri's portfolio : <br> Contact Page</div>
     </div>
 
-    <div class="contactMiddle">
+    <!---------- Middle part ---------->
+    <div class="container middle">
+
         <div class="contactItems">
             <img src="./asset/mail.png" alt="mail icon" class="icon">
             <div>joelekotrri98@gmail.com</div>
         </div>
+
         <div class="contactItems">
             <img src="./asset/phone.png" alt="phone icon" class="icon">
-            <div>+44 7572049550</div>
+            <div>+44 7572049550 - <b>UK</b></div>
         </div>
+
         <div class="contactItems">
             <img src="./asset/phone.png" alt="phone icon" class="icon">
-            <div>+39 3661350699</div>
+            <div>+39 3661350699 - <b>ITALY</b></div>
         </div>
+
         <div class="contactItems">
             <img src="./asset/link.png" alt="linkedin icon" class="icon">
-            <div><a href="">LinkedIn</a></div>
+            <div><a href="https://www.linkedin.com/in/joele-kotrri-4110112ab/">LinkedIn</a></div>
         </div>
+
     </div>
 
-    <div class="contactBottom">
-        <h3><a href="./index.html">Home</a></h3>
-        <h3><a href="./about.html">About me</a></h3>
-    </div>
+    <!---------- Bottom part ---------->
+    <div class="container bottom">
+        <a href="./index.html"><button id="buttonHome">Home</button></a>
+        <a href="./about.html"><button id="buttonAbout">About me</button></a>
+   </div>
 </body>
 </html>
