@@ -16,47 +16,30 @@ body{
 .top{
     background-color: #609966;
 
-    min-height: 30vh;
+    min-height: 15vh;
     height: auto;
 
     display: flex;   
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 
     color: #EDF1D6;
     overflow: hidden;
 }
 
-.contentTop{
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
-}
 
-.top img{
-    border-radius: 50%;
-    margin: 10px 0px;
-    float: left;
-}
-
-.top .top2{
-    width: 60%;
-    height: 75%;
-    overflow: hidden;
-    margin-left: 10px;
-}
-
-.top2Title{
+.top div{
     text-align: left;
     text-shadow: 2px 2px 2px #40513B;
     font-weight: bold;
+    margin: 15px;
 }
 
 /* -------------------- Middle Section -------------------- */
 
 .middle{
     background-color: #EDF1D6;
-    min-height: 50vh;
+    min-height: 65vh;
     height: auto;
 
     display: flex;
@@ -65,30 +48,34 @@ body{
     align-items: center;
 }
 
-.containerCont{
-    width: 90%;
-    margin: 10px 10px;
+.projectCard{
+    width: 80%;
     overflow: hidden;
     display: inline-block;
-}
-
-.previewMid{
-    float: left;
+    margin: 10px;
+    padding: 5px;
     border-radius: 5px;
+    background-color: #609966;
+    cursor: pointer;
 }
 
-.titleMid{
-    color: #40513B;
+.cardImg{
+    float: left;
+    margin-right: 10px;
+}
+
+.cardTitle{
+    color: #EDF1D6;
+    text-shadow: 2px 2px 2px #40513B;
     font-weight: bold;
+    text-align: start;
+    margin: 0px 10px 10px 10px;
 }
 
-.infoMid{
-    color: #21271f;
-}
-
-.containerCont a{
-    color: #609966;
-    text-decoration: none;
+.cardInfo{
+    color: #EDF1D6;
+    font-size: 15px;
+    margin: 0px 10px 10px 10px;
 }
 
 /* -------------------- Bottom Section -------------------- */
@@ -125,40 +112,23 @@ button:hover{
 @media (max-width: 600px){
 
     /* ---------- Top Section ---------- */
-    
-    .top img{
-        width: 100px;
-        border: solid 5px #40513B;
-    }
 
-    .top2Title{
+    .top div{
         font-size: 20px;
-    }
-
-    .top2Info{
-        text-shadow: 2px 2px 1px #40513B;
-        font-size: 15px;
     }
 
     /* ---------- Middle Section ---------- */
 
-    .previewMid{
-        width: 90px;
-        margin: 3px;
-        border: solid 5px #40513B;
+    .cardImg{
+        width: 75px;
     }
 
-    .titleMid{
-        font-size: 18px;
-    }
-
-    .infoMid{
+    .cardTitle{
         font-size: 15px;
-        margin: 5px 0px;
     }
 
-    .containerCont a{
-        font-size: 15px;
+    .cardInfo{
+        font-size: 10px;
     }
 
     /* ---------- Bottom Section ---------- */
@@ -166,7 +136,6 @@ button:hover{
     button{
         font-size: 15px;
     }
-
 }
 
 /* -------------------- TABLET 601 a 1200px -------------------- */
@@ -174,40 +143,22 @@ button:hover{
 @media (min-width: 601px) and (max-width: 1200px){
 
     /* ---------- Top Section ---------- */
-
-    .top img{
-        width: 150px;
-        border: solid 7.5px #40513B;
-    }
-
-    .top2Title{
-        font-size: 30px;
-    }
-
-    .top2Info{
-    text-shadow: 2px 2px 1px #40513B;
-    font-size: 20px;
+    .top div{
+        font-size: 25px;
     }
 
     /* ---------- Middle Section ---------- */
 
-    .previewMid{
-        width: 150px;
-        margin: 5px;
-        border: solid 5px #40513B;
+        .cardImg{
+        width: 100px;
     }
 
-    .titleMid{
-        font-size: 25px;
-    }
-
-    .infoMid{
+    .cardTitle{
         font-size: 20px;
-        margin: 5px 0px;
     }
 
-    .containerCont a{
-        font-size: 20px;
+    .cardInfo{
+        font-size: 15px;
     }
 
     /* ---------- Bottom Section ---------- */
@@ -223,38 +174,22 @@ button:hover{
 
     /* ---------- Top Section ---------- */
 
-    .top img{
-        width: 200px;
-        border: solid 10px #40513B;
-    }
-
-    .top2Title{
-        font-size: 50px;
-    }
-
-    .top2Info{
-        text-shadow: 2px 2px 1px #40513B;
-        font-size: 30px;
-    }
-    /* ---------- Middle Section ---------- */
-
-    .previewMid{
-        width: 150px;
-        margin: 10px;
-        border: solid 5px #40513B;
-    }
-
-    .titleMid{
+    .top div{
         font-size: 35px;
     }
 
-    .infoMid{
-        font-size: 30px;
-        margin: 5px 0px;
+    /* ---------- Middle Section ---------- */
+
+    .cardImg{
+        width: 150px;
     }
 
-    .containerCont a{
-        font-size: 30px;
+    .cardTitle{
+        font-size: 25px;
+    }
+
+    .cardInfo{
+        font-size: 20px;
     }
 
     /* ---------- Bottom Section ---------- */

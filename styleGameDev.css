@@ -27,6 +27,7 @@ body{
     overflow: hidden;
 }
 
+
 .top div{
     text-align: left;
     text-shadow: 2px 2px 2px #40513B;
@@ -43,28 +44,8 @@ body{
 
     display: flex;   
     flex-direction: column;
+    justify-content: center;
     align-items: start;
-}
-
-.section{
-    width: 90%;
-    margin: 10px;
-    
-    color: #40513B;
-    text-wrap: pretty;
-}
-
-.sectionTitle{
-    font-weight: bold;
-}
-
-.sectionInfo ul{
-    margin: 0px;
-    display: inline-block;
-}
-
-.sectionInfo li{
-    margin: 5px 0px 5px 0px;
 }
 
 /* -------------------- Bottom Section -------------------- */
@@ -108,14 +89,6 @@ button:hover{
 
     /* ---------- Middle Section ---------- */
 
-    .sectionTitle{
-        font-size: 18px;
-    }
-
-    .section{
-        font-size: 15px;
-    }
-
     /* ---------- Bottom Section ---------- */
 
     button{
@@ -133,14 +106,6 @@ button:hover{
     }
 
     /* ---------- Middle Section ---------- */
-
-        .sectionTitle{
-        font-size: 23px;
-    }
-
-    .section{
-        font-size: 20px;
-    }
 
     /* ---------- Bottom Section ---------- */
 
@@ -160,14 +125,6 @@ button:hover{
     }
 
     /* ---------- Middle Section ---------- */
-
-    .sectionTitle{
-        font-size: 33px;
-    }
-
-    .section{
-        font-size: 30px;
-    }
 
     /* ---------- Bottom Section ---------- */
 
