@@ -20,7 +20,7 @@
         <div class="projectCard">
             <img class="cardImg" src="./asset/prova.png" alt="test">
             <div class="cardTitle">1. My Portfolio page</div>
-            <div class="cardInfo">empore tempora et. Optio officiis, magni provident rem quas sequi tenetur ullam consequatur fugiat, excepturi atque esse tempore, autem animi!</div>
+            <div class="cardInfo">My first project and also my personal Portfolio</div>
         </div>
     </div>
 
@@ -30,5 +30,58 @@
         <a href="./about.html"><button id="buttonAbout">About me</button></a>
         <a href="./contact.html"><button id="buttonContact">Contacts</button></a>
    </div>
+
+   <!---------- Cards ---------->
+    <div class="popup hidden">
+        <div class="popupContent">
+            <div class="popupText" >
+                This is the first <b>big</b> project I ever did and I'm pretty proud of it. <br>
+                I wanted to make <b>a website where I could store all of my works</b> and show who I am, maybe this project isn't perfect by any means but it helped me grow. <br>
+                In the future, I'll continue to modify it until it's perfect or until I make a new one. <br>
+                Making this pop-up card was actually the most challening phase of it all but I'm glad I could make it. <br>
+                I'm not very good with words but with all that said, <b>see you in other projects!</b><br>
+            </div>
+
+            <div class="popupGallery">
+                <div class="pageSection">
+                    <img src="./asset/page1.png" alt="Home page img">
+                    <div>Home page</div>
+                </div>
+
+                <div class="pageSection">
+                    <img src="./asset/page2.png" alt="About me page img">
+                    <div>About me page</div>
+                </div>
+
+                <div class="pageSection">
+                    <img src="./asset/page3.png" alt="Contact page img">
+                    <div>Contact page</div>
+                </div>
+
+                <div class="pageSection">
+                    <img src="./asset/page4.png" alt="Frontend page img">
+                    <div>Front-End page</div>
+                </div>
+            </div>
+        </div>
+        <button class="closeBtn">Close</button>
+    </div>
+
+    <script>
+        const popup = document.querySelector('.popup');
+        const popupContent = document.querySelector('.popupContent');
+        const openBtn = document.querySelector('.projectCard'); // <-- adatta al tuo HTML
+        const closeBtn = document.querySelector('.closeBtn');
+
+        // apri popup
+        openBtn.addEventListener('click', () => {
+        popup.classList.remove('hidden');
+        });
+
+        // chiudi col bottone
+        closeBtn.addEventListener('click', () => {
+        popup.classList.add('hidden');
+        });
+    </script>
 </body>
 </html>
